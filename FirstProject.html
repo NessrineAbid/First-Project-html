@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1> Bienvenue dans Boutique Soura</h1>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="adresse.html">Adresse</a></li>
+                <li><a href="promos.html">Promos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main : Contenu principal de la page d'accueil -->
+    <main>
+        <!-- Article : Une présentation générale du site -->
+        <article>
+            <h2>Notre site</h2>
+            <p>Bienvenue sur notre site ! Nous proposons des services variés et des promotions intéressantes.</p>
+        </article>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        
+        <!-- Formulaire de contact -->
+        <section>
+            <h2>Contactez-nous</h2>
+            <form action="/submit_form" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Boîte de réclamation -->
+        <section>
+            <h2>Réclamation</h2>
+            <form action="/submit_complaint" method="POST">
+                <label for="complaint_name">Votre Nom :</label>
+                <input type="text" id="complaint_name" name="complaint_name" required><br><br>
+
+                <label for="complaint_email">Votre Email :</label>
+                <input type="email" id="complaint_email" name="complaint_email" required><br><br>
+
+                <label for="complaint">Détails de la réclamation :</label><br>
+                <textarea id="complaint" name="complaint" rows="6" cols="50" required></textarea><br><br>
+
+                <button type="submit">Soumettre la réclamation</button>
+            </form>
+        </section>
+    </footer>
+
+
+</body>
+</html>
